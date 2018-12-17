@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+    <h1> <strong> House Service </strong></h1>
+    <img src="http://top-vladimir.com/assets/files/2014/10/35j.jpg">
+    </header>
+
+    <form method="post">
+    <input name="id">
+    <input name="district">
+    <input name="price">
+    <button>Add new House</button>
+    </form>
+
+    <div data-th-each="house : ${houses}">
+    <p>[[${house.id}]]</p>
+    <p>[[${house.district}]]</p>
+    <p>[[${house.price}]]</p>
+    </div>
+</body>
+</html>

@@ -10,8 +10,8 @@ import lombok.NoArgsConstructor;
 public class House {
     private int id;
     private String district;
-    private int rooms;
-    private int area;
+//    private int rooms;
+//    private int area;
     private int price;
-    private boolean newBuilding;
+//    private boolean newBuilding;
 }

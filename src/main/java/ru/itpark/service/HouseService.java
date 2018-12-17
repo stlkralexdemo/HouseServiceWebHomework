@@ -17,8 +17,8 @@ public class HouseService {
         this.repository = repository;
     }
 
-    public void add(House house) {
-        repository.add(house);
+    public void add(int id, String district, int price) {
+        repository.add(new House(id,district,price));
     }
 
     public List<House> getAll() {

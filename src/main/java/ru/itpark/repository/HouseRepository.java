@@ -8,10 +8,10 @@ import java.util.List;
 
 @Repository
 public class HouseRepository {
-    private List<House> houses = new ArrayList<>();
+    private  final List<House> houses = new ArrayList<>();
 
     public void add(House house) {
-        houses.add(house);
+        this.houses.add(house);
     }
 
     public List<House> getAll() {
